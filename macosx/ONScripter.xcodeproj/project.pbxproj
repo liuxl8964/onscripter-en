@@ -248,7 +248,6 @@
 		365A964D0BE05A3800786213 /* SDL_yuv.c in Sources */ = {isa = PBXBuildFile; fileRef = 365A963D0BE05A3800786213 /* SDL_yuv.c */; };
 		365A964E0BE05A3800786213 /* SDL_gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = 365A963E0BE05A3800786213 /* SDL_gamma.c */; };
 		365A96590BE05A5700786213 /* SDL_QuartzWM.m in Sources */ = {isa = PBXBuildFile; fileRef = 365A964F0BE05A5700786213 /* SDL_QuartzWM.m */; };
-		365A965A0BE05A5700786213 /* SDL_QuartzYUV.m in Sources */ = {isa = PBXBuildFile; fileRef = 365A96500BE05A5700786213 /* SDL_QuartzYUV.m */; };
 		365A965B0BE05A5700786213 /* SDL_QuartzVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 365A96510BE05A5700786213 /* SDL_QuartzVideo.h */; };
 		365A965C0BE05A5700786213 /* SDL_QuartzGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 365A96520BE05A5700786213 /* SDL_QuartzGL.m */; };
 		365A965D0BE05A5700786213 /* SDL_QuartzVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 365A96530BE05A5700786213 /* SDL_QuartzVideo.m */; };
@@ -446,7 +445,6 @@
 		E2754CC20FEB6DA500739950 /* graphics_altivec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2754CC00FEB6DA500739950 /* graphics_altivec.cpp */; };
 		E278091912590397002B8FD0 /* ONScripterHelp in Resources */ = {isa = PBXBuildFile; fileRef = E278091712590397002B8FD0 /* ONScripterHelp */; };
 		E27F9B4111BED30B00E19C12 /* SDLMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = E27F9B3F11BED30B00E19C12 /* SDLMain.nib */; };
-		E27F9B8A11BEE59100E19C12 /* ONSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = E27F9B8911BEE59100E19C12 /* ONSApplication.m */; };
 		E2A942311102D39000FB6580 /* ons-en.icns in Resources */ = {isa = PBXBuildFile; fileRef = E2A942301102D39000FB6580 /* ons-en.icns */; };
 		E2B8F77610F70B410023E30D /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 365A95030BE0535800786213 /* libpng.a */; };
 		E2B8F77910F70B540023E30D /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 365A95030BE0535800786213 /* libpng.a */; };
@@ -485,6 +483,7 @@
 		E2F035CE10D8AC6C006F30BA /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 365A934B0BE04AE300786213 /* libjpeg.a */; };
 		E2F035D410D8AC92006F30BA /* nscdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F034D410D8A47E006F30BA /* nscdec.cpp */; };
 		E2F035DA10D8ACC8006F30BA /* nscmake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2F034D510D8A47E006F30BA /* nscmake.cpp */; };
+		E55DAD7A1FE4871400DAA7EA /* native_midi_macosx.c in Sources */ = {isa = PBXBuildFile; fileRef = E55DAD791FE4871400DAA7EA /* native_midi_macosx.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -748,12 +747,12 @@
 		363F39E30BE479F80065F874 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = CHANGES; path = ../CHANGES; sourceTree = SOURCE_ROOT; };
 		363F39E40BE479F80065F874 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = COPYING; path = ../COPYING; sourceTree = SOURCE_ROOT; };
 		363F39E50BE479F80065F874 /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = README; path = ../README; sourceTree = SOURCE_ROOT; };
-		363F3B610BE489C50065F874 /* native_midi_common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = native_midi_common.c; path = "../extlib/src/SDL_mixer-1.2.8/native_midi/native_midi_common.c"; sourceTree = SOURCE_ROOT; };
-		363F3B620BE489C50065F874 /* native_midi_common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = native_midi_common.h; path = "../extlib/src/SDL_mixer-1.2.8/native_midi/native_midi_common.h"; sourceTree = SOURCE_ROOT; };
-		363F3B630BE489C50065F874 /* native_midi_mac.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = native_midi_mac.c; path = "../extlib/src/SDL_mixer-1.2.8/native_midi/native_midi_mac.c"; sourceTree = SOURCE_ROOT; };
-		363F3B640BE489C50065F874 /* native_midi_win32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = native_midi_win32.c; path = "../extlib/src/SDL_mixer-1.2.8/native_midi/native_midi_win32.c"; sourceTree = SOURCE_ROOT; };
-		363F3B650BE489C50065F874 /* native_midi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = native_midi.h; path = "../extlib/src/SDL_mixer-1.2.8/native_midi/native_midi.h"; sourceTree = SOURCE_ROOT; };
-		363F45C00BE4D00B0065F874 /* SDL_dlcompat.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_dlcompat.c; path = "../extlib/src/SDL-1.2.13/src/loadso/macosx/SDL_dlcompat.c"; sourceTree = SOURCE_ROOT; };
+		363F3B610BE489C50065F874 /* native_midi_common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = native_midi_common.c; path = "../extlib/src/SDL_mixer-1.2.12/native_midi/native_midi_common.c"; sourceTree = SOURCE_ROOT; };
+		363F3B620BE489C50065F874 /* native_midi_common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = native_midi_common.h; path = "../extlib/src/SDL_mixer-1.2.12/native_midi/native_midi_common.h"; sourceTree = SOURCE_ROOT; };
+		363F3B630BE489C50065F874 /* native_midi_mac.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = native_midi_mac.c; path = "../extlib/src/SDL_mixer-1.2.12/native_midi/native_midi_mac.c"; sourceTree = SOURCE_ROOT; };
+		363F3B640BE489C50065F874 /* native_midi_win32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = native_midi_win32.c; path = "../extlib/src/SDL_mixer-1.2.12/native_midi/native_midi_win32.c"; sourceTree = SOURCE_ROOT; };
+		363F3B650BE489C50065F874 /* native_midi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = native_midi.h; path = "../extlib/src/SDL_mixer-1.2.12/native_midi/native_midi.h"; sourceTree = SOURCE_ROOT; };
+		363F45C00BE4D00B0065F874 /* SDL_dlcompat.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_dlcompat.c; path = "../extlib/src/SDL-1.2.15/src/loadso/macosx/SDL_dlcompat.c"; sourceTree = SOURCE_ROOT; };
 		365A91550BE03F1700786213 /* ONScripterLabel_effect.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ONScripterLabel_effect.cpp; path = ../ONScripterLabel_effect.cpp; sourceTree = SOURCE_ROOT; };
 		365A91560BE03F1700786213 /* ONScripterLabel_animation.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ONScripterLabel_animation.cpp; path = ../ONScripterLabel_animation.cpp; sourceTree = SOURCE_ROOT; };
 		365A91570BE03F1700786213 /* ONScripterLabel_file.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = ONScripterLabel_file.cpp; path = ../ONScripterLabel_file.cpp; sourceTree = SOURCE_ROOT; };
@@ -933,107 +932,106 @@
 		365A951F0BE0538600786213 /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = pngwutil.c; path = "../extlib/src/libpng-1.2.24/pngwutil.c"; sourceTree = SOURCE_ROOT; };
 		365A95420BE0546300786213 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
 		365A95700BE0573000786213 /* libSDL.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDL.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		365A95790BE057BD00786213 /* SDL_error_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_error_c.h; path = "../extlib/src/SDL-1.2.13/src/SDL_error_c.h"; sourceTree = SOURCE_ROOT; };
-		365A957A0BE057BD00786213 /* SDL_fatal.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_fatal.c; path = "../extlib/src/SDL-1.2.13/src/SDL_fatal.c"; sourceTree = SOURCE_ROOT; };
-		365A957B0BE057BD00786213 /* SDL.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL.c; path = "../extlib/src/SDL-1.2.13/src/SDL.c"; sourceTree = SOURCE_ROOT; };
-		365A957C0BE057BD00786213 /* SDL_fatal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_fatal.h; path = "../extlib/src/SDL-1.2.13/src/SDL_fatal.h"; sourceTree = SOURCE_ROOT; };
-		365A957D0BE057BD00786213 /* SDL_error.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_error.c; path = "../extlib/src/SDL-1.2.13/src/SDL_error.c"; sourceTree = SOURCE_ROOT; };
-		365A95870BE0580100786213 /* SDL_mixer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_mixer.c"; sourceTree = SOURCE_ROOT; };
-		365A95880BE0580100786213 /* SDL_audio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_audio.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_audio.c"; sourceTree = SOURCE_ROOT; };
-		365A95890BE0580100786213 /* SDL_sysaudio.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysaudio.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_sysaudio.h"; sourceTree = SOURCE_ROOT; };
-		365A958A0BE0580100786213 /* SDL_audiodev.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_audiodev.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_audiodev.c"; sourceTree = SOURCE_ROOT; };
-		365A958B0BE0580100786213 /* SDL_audiocvt.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_audiocvt.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_audiocvt.c"; sourceTree = SOURCE_ROOT; };
-		365A958C0BE0580100786213 /* SDL_mixer_MMX.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer_MMX.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_mixer_MMX.c"; sourceTree = SOURCE_ROOT; };
-		365A958D0BE0580100786213 /* SDL_audio_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_audio_c.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_audio_c.h"; sourceTree = SOURCE_ROOT; };
-		365A958E0BE0580100786213 /* SDL_wave.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_wave.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_wave.h"; sourceTree = SOURCE_ROOT; };
-		365A958F0BE0580100786213 /* SDL_mixer_MMX_VC.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer_MMX_VC.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_mixer_MMX_VC.c"; sourceTree = SOURCE_ROOT; };
-		365A95900BE0580100786213 /* SDL_mixer_MMX.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer_MMX.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_mixer_MMX.h"; sourceTree = SOURCE_ROOT; };
-		365A95910BE0580100786213 /* SDL_wave.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_wave.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_wave.c"; sourceTree = SOURCE_ROOT; };
-		365A95920BE0580100786213 /* SDL_audiomem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_audiomem.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_audiomem.h"; sourceTree = SOURCE_ROOT; };
-		365A95930BE0580100786213 /* SDL_audiodev_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_audiodev_c.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_audiodev_c.h"; sourceTree = SOURCE_ROOT; };
-		365A95940BE0580100786213 /* SDL_mixer_MMX_VC.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer_MMX_VC.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_mixer_MMX_VC.h"; sourceTree = SOURCE_ROOT; };
-		365A95A60BE0583200786213 /* SDL_cdrom.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_cdrom.c; path = "../extlib/src/SDL-1.2.13/src/cdrom/SDL_cdrom.c"; sourceTree = SOURCE_ROOT; };
-		365A95A70BE0583200786213 /* SDL_syscdrom.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_syscdrom.h; path = "../extlib/src/SDL-1.2.13/src/cdrom/SDL_syscdrom.h"; sourceTree = SOURCE_ROOT; };
-		365A95AC0BE0587000786213 /* CDPlayer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = CDPlayer.c; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/CDPlayer.c"; sourceTree = SOURCE_ROOT; };
-		365A95AD0BE0587000786213 /* SDLOSXCAGuard.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDLOSXCAGuard.h; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/SDLOSXCAGuard.h"; sourceTree = SOURCE_ROOT; };
-		365A95AE0BE0587000786213 /* SDLOSXCAGuard.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDLOSXCAGuard.c; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/SDLOSXCAGuard.c"; sourceTree = SOURCE_ROOT; };
-		365A95AF0BE0587000786213 /* AudioFilePlayer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = AudioFilePlayer.c; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/AudioFilePlayer.c"; sourceTree = SOURCE_ROOT; };
-		365A95B00BE0587000786213 /* CDPlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CDPlayer.h; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/CDPlayer.h"; sourceTree = SOURCE_ROOT; };
-		365A95B10BE0587000786213 /* AudioFilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AudioFilePlayer.h; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/AudioFilePlayer.h"; sourceTree = SOURCE_ROOT; };
-		365A95B20BE0587000786213 /* SDL_syscdrom.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_syscdrom.c; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/SDL_syscdrom.c"; sourceTree = SOURCE_ROOT; };
-		365A95B30BE0587000786213 /* SDL_syscdrom_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_syscdrom_c.h; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/SDL_syscdrom_c.h"; sourceTree = SOURCE_ROOT; };
-		365A95C60BE058C900786213 /* SDL_resize.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_resize.c; path = "../extlib/src/SDL-1.2.13/src/events/SDL_resize.c"; sourceTree = SOURCE_ROOT; };
-		365A95C70BE058C900786213 /* SDL_sysevents.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysevents.h; path = "../extlib/src/SDL-1.2.13/src/events/SDL_sysevents.h"; sourceTree = SOURCE_ROOT; };
-		365A95C80BE058C900786213 /* SDL_quit.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_quit.c; path = "../extlib/src/SDL-1.2.13/src/events/SDL_quit.c"; sourceTree = SOURCE_ROOT; };
-		365A95C90BE058C900786213 /* SDL_keyboard.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_keyboard.c; path = "../extlib/src/SDL-1.2.13/src/events/SDL_keyboard.c"; sourceTree = SOURCE_ROOT; };
-		365A95CA0BE058C900786213 /* SDL_mouse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mouse.c; path = "../extlib/src/SDL-1.2.13/src/events/SDL_mouse.c"; sourceTree = SOURCE_ROOT; };
-		365A95CB0BE058C900786213 /* SDL_expose.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_expose.c; path = "../extlib/src/SDL-1.2.13/src/events/SDL_expose.c"; sourceTree = SOURCE_ROOT; };
-		365A95CC0BE058C900786213 /* SDL_active.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_active.c; path = "../extlib/src/SDL-1.2.13/src/events/SDL_active.c"; sourceTree = SOURCE_ROOT; };
-		365A95CD0BE058C900786213 /* SDL_events_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_events_c.h; path = "../extlib/src/SDL-1.2.13/src/events/SDL_events_c.h"; sourceTree = SOURCE_ROOT; };
-		365A95CE0BE058C900786213 /* SDL_events.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_events.c; path = "../extlib/src/SDL-1.2.13/src/events/SDL_events.c"; sourceTree = SOURCE_ROOT; };
-		365A95E20BE0591500786213 /* SDL_sysjoystick.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysjoystick.h; path = "../extlib/src/SDL-1.2.13/src/joystick/SDL_sysjoystick.h"; sourceTree = SOURCE_ROOT; };
-		365A95E30BE0591500786213 /* SDL_joystick.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_joystick.c; path = "../extlib/src/SDL-1.2.13/src/joystick/SDL_joystick.c"; sourceTree = SOURCE_ROOT; };
-		365A95E40BE0591500786213 /* SDL_joystick_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_joystick_c.h; path = "../extlib/src/SDL-1.2.13/src/joystick/SDL_joystick_c.h"; sourceTree = SOURCE_ROOT; };
-		365A95E80BE0591E00786213 /* SDL_sysjoystick.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_sysjoystick.c; path = "../extlib/src/SDL-1.2.13/src/joystick/darwin/SDL_sysjoystick.c"; sourceTree = SOURCE_ROOT; };
-		365A95F00BE0594400786213 /* SDL_sysloadso.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_sysloadso.c; path = "../extlib/src/SDL-1.2.13/src/loadso/dlopen/SDL_sysloadso.c"; sourceTree = SOURCE_ROOT; };
-		365A95FA0BE0596E00786213 /* SDL_getenv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_getenv.c; path = "../extlib/src/SDL-1.2.13/src/stdlib/SDL_getenv.c"; sourceTree = SOURCE_ROOT; };
-		365A95FB0BE0596E00786213 /* SDL_iconv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_iconv.c; path = "../extlib/src/SDL-1.2.13/src/stdlib/SDL_iconv.c"; sourceTree = SOURCE_ROOT; };
-		365A95FC0BE0596E00786213 /* SDL_malloc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_malloc.c; path = "../extlib/src/SDL-1.2.13/src/stdlib/SDL_malloc.c"; sourceTree = SOURCE_ROOT; };
-		365A95FD0BE0596E00786213 /* SDL_qsort.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_qsort.c; path = "../extlib/src/SDL-1.2.13/src/stdlib/SDL_qsort.c"; sourceTree = SOURCE_ROOT; };
-		365A95FE0BE0596E00786213 /* SDL_stdlib.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_stdlib.c; path = "../extlib/src/SDL-1.2.13/src/stdlib/SDL_stdlib.c"; sourceTree = SOURCE_ROOT; };
-		365A95FF0BE0596E00786213 /* SDL_string.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_string.c; path = "../extlib/src/SDL-1.2.13/src/stdlib/SDL_string.c"; sourceTree = SOURCE_ROOT; };
-		365A960A0BE059A500786213 /* SDL_systhread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_systhread.h; path = "../extlib/src/SDL-1.2.13/src/thread/SDL_systhread.h"; sourceTree = SOURCE_ROOT; };
-		365A960B0BE059A500786213 /* SDL_thread.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_thread.c; path = "../extlib/src/SDL-1.2.13/src/thread/SDL_thread.c"; sourceTree = SOURCE_ROOT; };
-		365A960C0BE059A500786213 /* SDL_thread_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_thread_c.h; path = "../extlib/src/SDL-1.2.13/src/thread/SDL_thread_c.h"; sourceTree = SOURCE_ROOT; };
-		365A96100BE059AF00786213 /* SDL_syscond.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_syscond.c; path = "../extlib/src/SDL-1.2.13/src/thread/pthread/SDL_syscond.c"; sourceTree = SOURCE_ROOT; };
-		365A96110BE059AF00786213 /* SDL_sysmutex.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_sysmutex.c; path = "../extlib/src/SDL-1.2.13/src/thread/pthread/SDL_sysmutex.c"; sourceTree = SOURCE_ROOT; };
-		365A96120BE059AF00786213 /* SDL_sysmutex_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysmutex_c.h; path = "../extlib/src/SDL-1.2.13/src/thread/pthread/SDL_sysmutex_c.h"; sourceTree = SOURCE_ROOT; };
-		365A96130BE059AF00786213 /* SDL_syssem.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_syssem.c; path = "../extlib/src/SDL-1.2.13/src/thread/pthread/SDL_syssem.c"; sourceTree = SOURCE_ROOT; };
-		365A96140BE059AF00786213 /* SDL_systhread.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_systhread.c; path = "../extlib/src/SDL-1.2.13/src/thread/pthread/SDL_systhread.c"; sourceTree = SOURCE_ROOT; };
-		365A96150BE059AF00786213 /* SDL_systhread_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_systhread_c.h; path = "../extlib/src/SDL-1.2.13/src/thread/pthread/SDL_systhread_c.h"; sourceTree = SOURCE_ROOT; };
-		365A96200BE059DA00786213 /* SDL_timer_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_timer_c.h; path = "../extlib/src/SDL-1.2.13/src/timer/SDL_timer_c.h"; sourceTree = SOURCE_ROOT; };
-		365A96210BE059DA00786213 /* SDL_timer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_timer.c; path = "../extlib/src/SDL-1.2.13/src/timer/SDL_timer.c"; sourceTree = SOURCE_ROOT; };
-		365A96220BE059DA00786213 /* SDL_systimer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_systimer.h; path = "../extlib/src/SDL-1.2.13/src/timer/SDL_systimer.h"; sourceTree = SOURCE_ROOT; };
-		365A96260BE059E900786213 /* SDL_systimer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_systimer.c; path = "../extlib/src/SDL-1.2.13/src/timer/unix/SDL_systimer.c"; sourceTree = SOURCE_ROOT; };
-		365A962F0BE05A3800786213 /* SDL_cursor.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_cursor.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_cursor.c"; sourceTree = SOURCE_ROOT; };
-		365A96300BE05A3800786213 /* SDL_blit_A.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_A.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_blit_A.c"; sourceTree = SOURCE_ROOT; };
-		365A96310BE05A3800786213 /* SDL_blit_0.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_0.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_blit_0.c"; sourceTree = SOURCE_ROOT; };
-		365A96320BE05A3800786213 /* SDL_RLEaccel.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_RLEaccel.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_RLEaccel.c"; sourceTree = SOURCE_ROOT; };
-		365A96330BE05A3800786213 /* SDL_yuv_sw.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_yuv_sw.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_yuv_sw.c"; sourceTree = SOURCE_ROOT; };
-		365A96340BE05A3800786213 /* SDL_bmp.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_bmp.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_bmp.c"; sourceTree = SOURCE_ROOT; };
-		365A96350BE05A3800786213 /* SDL_pixels.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_pixels.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_pixels.c"; sourceTree = SOURCE_ROOT; };
-		365A96360BE05A3800786213 /* SDL_surface.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_surface.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_surface.c"; sourceTree = SOURCE_ROOT; };
-		365A96370BE05A3800786213 /* SDL_blit_N.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_N.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_blit_N.c"; sourceTree = SOURCE_ROOT; };
-		365A96380BE05A3800786213 /* SDL_video.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_video.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_video.c"; sourceTree = SOURCE_ROOT; };
-		365A96390BE05A3800786213 /* SDL_stretch.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_stretch.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_stretch.c"; sourceTree = SOURCE_ROOT; };
-		365A963A0BE05A3800786213 /* SDL_blit_1.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_1.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_blit_1.c"; sourceTree = SOURCE_ROOT; };
-		365A963B0BE05A3800786213 /* SDL_blit.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_blit.c"; sourceTree = SOURCE_ROOT; };
-		365A963C0BE05A3800786213 /* SDL_yuv_mmx.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_yuv_mmx.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_yuv_mmx.c"; sourceTree = SOURCE_ROOT; };
-		365A963D0BE05A3800786213 /* SDL_yuv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_yuv.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_yuv.c"; sourceTree = SOURCE_ROOT; };
-		365A963E0BE05A3800786213 /* SDL_gamma.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_gamma.c; path = "../extlib/src/SDL-1.2.13/src/video/SDL_gamma.c"; sourceTree = SOURCE_ROOT; };
-		365A964F0BE05A5700786213 /* SDL_QuartzWM.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzWM.m; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzWM.m"; sourceTree = SOURCE_ROOT; };
-		365A96500BE05A5700786213 /* SDL_QuartzYUV.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzYUV.m; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzYUV.m"; sourceTree = SOURCE_ROOT; };
-		365A96510BE05A5700786213 /* SDL_QuartzVideo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_QuartzVideo.h; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzVideo.h"; sourceTree = SOURCE_ROOT; };
-		365A96520BE05A5700786213 /* SDL_QuartzGL.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzGL.m; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzGL.m"; sourceTree = SOURCE_ROOT; };
-		365A96530BE05A5700786213 /* SDL_QuartzVideo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzVideo.m; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzVideo.m"; sourceTree = SOURCE_ROOT; };
-		365A96540BE05A5700786213 /* SDL_QuartzKeys.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_QuartzKeys.h; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzKeys.h"; sourceTree = SOURCE_ROOT; };
-		365A96550BE05A5700786213 /* SDL_QuartzWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzWindow.m; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzWindow.m"; sourceTree = SOURCE_ROOT; };
-		365A96560BE05A5700786213 /* SDL_QuartzWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_QuartzWindow.h; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzWindow.h"; sourceTree = SOURCE_ROOT; };
-		365A96570BE05A5700786213 /* SDL_QuartzEvents.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzEvents.m; path = "../extlib/src/SDL-1.2.13/src/video/quartz/SDL_QuartzEvents.m"; sourceTree = SOURCE_ROOT; };
-		365A96580BE05A5700786213 /* CGS.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CGS.h; path = "../extlib/src/SDL-1.2.13/src/video/quartz/CGS.h"; sourceTree = SOURCE_ROOT; };
-		365A96870BE05AE400786213 /* SDL_mixer_m68k.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer_m68k.c; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_mixer_m68k.c"; sourceTree = SOURCE_ROOT; };
-		365A96880BE05AE400786213 /* SDL_mixer_m68k.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer_m68k.h; path = "../extlib/src/SDL-1.2.13/src/audio/SDL_mixer_m68k.h"; sourceTree = SOURCE_ROOT; };
+		365A95790BE057BD00786213 /* SDL_error_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_error_c.h; path = "../extlib/src/SDL-1.2.15/src/SDL_error_c.h"; sourceTree = SOURCE_ROOT; };
+		365A957A0BE057BD00786213 /* SDL_fatal.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_fatal.c; path = "../extlib/src/SDL-1.2.15/src/SDL_fatal.c"; sourceTree = SOURCE_ROOT; };
+		365A957B0BE057BD00786213 /* SDL.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL.c; path = "../extlib/src/SDL-1.2.15/src/SDL.c"; sourceTree = SOURCE_ROOT; };
+		365A957C0BE057BD00786213 /* SDL_fatal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_fatal.h; path = "../extlib/src/SDL-1.2.15/src/SDL_fatal.h"; sourceTree = SOURCE_ROOT; };
+		365A957D0BE057BD00786213 /* SDL_error.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_error.c; path = "../extlib/src/SDL-1.2.15/src/SDL_error.c"; sourceTree = SOURCE_ROOT; };
+		365A95870BE0580100786213 /* SDL_mixer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_mixer.c"; sourceTree = SOURCE_ROOT; };
+		365A95880BE0580100786213 /* SDL_audio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_audio.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_audio.c"; sourceTree = SOURCE_ROOT; };
+		365A95890BE0580100786213 /* SDL_sysaudio.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysaudio.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_sysaudio.h"; sourceTree = SOURCE_ROOT; };
+		365A958A0BE0580100786213 /* SDL_audiodev.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_audiodev.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_audiodev.c"; sourceTree = SOURCE_ROOT; };
+		365A958B0BE0580100786213 /* SDL_audiocvt.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_audiocvt.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_audiocvt.c"; sourceTree = SOURCE_ROOT; };
+		365A958C0BE0580100786213 /* SDL_mixer_MMX.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer_MMX.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_mixer_MMX.c"; sourceTree = SOURCE_ROOT; };
+		365A958D0BE0580100786213 /* SDL_audio_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_audio_c.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_audio_c.h"; sourceTree = SOURCE_ROOT; };
+		365A958E0BE0580100786213 /* SDL_wave.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_wave.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_wave.h"; sourceTree = SOURCE_ROOT; };
+		365A958F0BE0580100786213 /* SDL_mixer_MMX_VC.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer_MMX_VC.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_mixer_MMX_VC.c"; sourceTree = SOURCE_ROOT; };
+		365A95900BE0580100786213 /* SDL_mixer_MMX.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer_MMX.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_mixer_MMX.h"; sourceTree = SOURCE_ROOT; };
+		365A95910BE0580100786213 /* SDL_wave.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_wave.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_wave.c"; sourceTree = SOURCE_ROOT; };
+		365A95920BE0580100786213 /* SDL_audiomem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_audiomem.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_audiomem.h"; sourceTree = SOURCE_ROOT; };
+		365A95930BE0580100786213 /* SDL_audiodev_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_audiodev_c.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_audiodev_c.h"; sourceTree = SOURCE_ROOT; };
+		365A95940BE0580100786213 /* SDL_mixer_MMX_VC.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer_MMX_VC.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_mixer_MMX_VC.h"; sourceTree = SOURCE_ROOT; };
+		365A95A60BE0583200786213 /* SDL_cdrom.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_cdrom.c; path = "../extlib/src/SDL-1.2.15/src/cdrom/SDL_cdrom.c"; sourceTree = SOURCE_ROOT; };
+		365A95A70BE0583200786213 /* SDL_syscdrom.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_syscdrom.h; path = "../extlib/src/SDL-1.2.15/src/cdrom/SDL_syscdrom.h"; sourceTree = SOURCE_ROOT; };
+		365A95AC0BE0587000786213 /* CDPlayer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = CDPlayer.c; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/CDPlayer.c"; sourceTree = SOURCE_ROOT; };
+		365A95AD0BE0587000786213 /* SDLOSXCAGuard.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDLOSXCAGuard.h; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/SDLOSXCAGuard.h"; sourceTree = SOURCE_ROOT; };
+		365A95AE0BE0587000786213 /* SDLOSXCAGuard.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDLOSXCAGuard.c; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/SDLOSXCAGuard.c"; sourceTree = SOURCE_ROOT; };
+		365A95AF0BE0587000786213 /* AudioFilePlayer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = AudioFilePlayer.c; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/AudioFilePlayer.c"; sourceTree = SOURCE_ROOT; };
+		365A95B00BE0587000786213 /* CDPlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CDPlayer.h; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/CDPlayer.h"; sourceTree = SOURCE_ROOT; };
+		365A95B10BE0587000786213 /* AudioFilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AudioFilePlayer.h; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/AudioFilePlayer.h"; sourceTree = SOURCE_ROOT; };
+		365A95B20BE0587000786213 /* SDL_syscdrom.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_syscdrom.c; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/SDL_syscdrom.c"; sourceTree = SOURCE_ROOT; };
+		365A95B30BE0587000786213 /* SDL_syscdrom_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_syscdrom_c.h; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/SDL_syscdrom_c.h"; sourceTree = SOURCE_ROOT; };
+		365A95C60BE058C900786213 /* SDL_resize.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_resize.c; path = "../extlib/src/SDL-1.2.15/src/events/SDL_resize.c"; sourceTree = SOURCE_ROOT; };
+		365A95C70BE058C900786213 /* SDL_sysevents.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysevents.h; path = "../extlib/src/SDL-1.2.15/src/events/SDL_sysevents.h"; sourceTree = SOURCE_ROOT; };
+		365A95C80BE058C900786213 /* SDL_quit.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_quit.c; path = "../extlib/src/SDL-1.2.15/src/events/SDL_quit.c"; sourceTree = SOURCE_ROOT; };
+		365A95C90BE058C900786213 /* SDL_keyboard.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_keyboard.c; path = "../extlib/src/SDL-1.2.15/src/events/SDL_keyboard.c"; sourceTree = SOURCE_ROOT; };
+		365A95CA0BE058C900786213 /* SDL_mouse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mouse.c; path = "../extlib/src/SDL-1.2.15/src/events/SDL_mouse.c"; sourceTree = SOURCE_ROOT; };
+		365A95CB0BE058C900786213 /* SDL_expose.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_expose.c; path = "../extlib/src/SDL-1.2.15/src/events/SDL_expose.c"; sourceTree = SOURCE_ROOT; };
+		365A95CC0BE058C900786213 /* SDL_active.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_active.c; path = "../extlib/src/SDL-1.2.15/src/events/SDL_active.c"; sourceTree = SOURCE_ROOT; };
+		365A95CD0BE058C900786213 /* SDL_events_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_events_c.h; path = "../extlib/src/SDL-1.2.15/src/events/SDL_events_c.h"; sourceTree = SOURCE_ROOT; };
+		365A95CE0BE058C900786213 /* SDL_events.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_events.c; path = "../extlib/src/SDL-1.2.15/src/events/SDL_events.c"; sourceTree = SOURCE_ROOT; };
+		365A95E20BE0591500786213 /* SDL_sysjoystick.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysjoystick.h; path = "../extlib/src/SDL-1.2.15/src/joystick/SDL_sysjoystick.h"; sourceTree = SOURCE_ROOT; };
+		365A95E30BE0591500786213 /* SDL_joystick.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_joystick.c; path = "../extlib/src/SDL-1.2.15/src/joystick/SDL_joystick.c"; sourceTree = SOURCE_ROOT; };
+		365A95E40BE0591500786213 /* SDL_joystick_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_joystick_c.h; path = "../extlib/src/SDL-1.2.15/src/joystick/SDL_joystick_c.h"; sourceTree = SOURCE_ROOT; };
+		365A95E80BE0591E00786213 /* SDL_sysjoystick.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_sysjoystick.c; path = "../extlib/src/SDL-1.2.15/src/joystick/darwin/SDL_sysjoystick.c"; sourceTree = SOURCE_ROOT; };
+		365A95F00BE0594400786213 /* SDL_sysloadso.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_sysloadso.c; path = "../extlib/src/SDL-1.2.15/src/loadso/dlopen/SDL_sysloadso.c"; sourceTree = SOURCE_ROOT; };
+		365A95FA0BE0596E00786213 /* SDL_getenv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_getenv.c; path = "../extlib/src/SDL-1.2.15/src/stdlib/SDL_getenv.c"; sourceTree = SOURCE_ROOT; };
+		365A95FB0BE0596E00786213 /* SDL_iconv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_iconv.c; path = "../extlib/src/SDL-1.2.15/src/stdlib/SDL_iconv.c"; sourceTree = SOURCE_ROOT; };
+		365A95FC0BE0596E00786213 /* SDL_malloc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_malloc.c; path = "../extlib/src/SDL-1.2.15/src/stdlib/SDL_malloc.c"; sourceTree = SOURCE_ROOT; };
+		365A95FD0BE0596E00786213 /* SDL_qsort.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_qsort.c; path = "../extlib/src/SDL-1.2.15/src/stdlib/SDL_qsort.c"; sourceTree = SOURCE_ROOT; };
+		365A95FE0BE0596E00786213 /* SDL_stdlib.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_stdlib.c; path = "../extlib/src/SDL-1.2.15/src/stdlib/SDL_stdlib.c"; sourceTree = SOURCE_ROOT; };
+		365A95FF0BE0596E00786213 /* SDL_string.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_string.c; path = "../extlib/src/SDL-1.2.15/src/stdlib/SDL_string.c"; sourceTree = SOURCE_ROOT; };
+		365A960A0BE059A500786213 /* SDL_systhread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_systhread.h; path = "../extlib/src/SDL-1.2.15/src/thread/SDL_systhread.h"; sourceTree = SOURCE_ROOT; };
+		365A960B0BE059A500786213 /* SDL_thread.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_thread.c; path = "../extlib/src/SDL-1.2.15/src/thread/SDL_thread.c"; sourceTree = SOURCE_ROOT; };
+		365A960C0BE059A500786213 /* SDL_thread_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_thread_c.h; path = "../extlib/src/SDL-1.2.15/src/thread/SDL_thread_c.h"; sourceTree = SOURCE_ROOT; };
+		365A96100BE059AF00786213 /* SDL_syscond.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_syscond.c; path = "../extlib/src/SDL-1.2.15/src/thread/pthread/SDL_syscond.c"; sourceTree = SOURCE_ROOT; };
+		365A96110BE059AF00786213 /* SDL_sysmutex.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_sysmutex.c; path = "../extlib/src/SDL-1.2.15/src/thread/pthread/SDL_sysmutex.c"; sourceTree = SOURCE_ROOT; };
+		365A96120BE059AF00786213 /* SDL_sysmutex_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_sysmutex_c.h; path = "../extlib/src/SDL-1.2.15/src/thread/pthread/SDL_sysmutex_c.h"; sourceTree = SOURCE_ROOT; };
+		365A96130BE059AF00786213 /* SDL_syssem.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_syssem.c; path = "../extlib/src/SDL-1.2.15/src/thread/pthread/SDL_syssem.c"; sourceTree = SOURCE_ROOT; };
+		365A96140BE059AF00786213 /* SDL_systhread.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_systhread.c; path = "../extlib/src/SDL-1.2.15/src/thread/pthread/SDL_systhread.c"; sourceTree = SOURCE_ROOT; };
+		365A96150BE059AF00786213 /* SDL_systhread_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_systhread_c.h; path = "../extlib/src/SDL-1.2.15/src/thread/pthread/SDL_systhread_c.h"; sourceTree = SOURCE_ROOT; };
+		365A96200BE059DA00786213 /* SDL_timer_c.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_timer_c.h; path = "../extlib/src/SDL-1.2.15/src/timer/SDL_timer_c.h"; sourceTree = SOURCE_ROOT; };
+		365A96210BE059DA00786213 /* SDL_timer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_timer.c; path = "../extlib/src/SDL-1.2.15/src/timer/SDL_timer.c"; sourceTree = SOURCE_ROOT; };
+		365A96220BE059DA00786213 /* SDL_systimer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_systimer.h; path = "../extlib/src/SDL-1.2.15/src/timer/SDL_systimer.h"; sourceTree = SOURCE_ROOT; };
+		365A96260BE059E900786213 /* SDL_systimer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_systimer.c; path = "../extlib/src/SDL-1.2.15/src/timer/unix/SDL_systimer.c"; sourceTree = SOURCE_ROOT; };
+		365A962F0BE05A3800786213 /* SDL_cursor.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_cursor.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_cursor.c"; sourceTree = SOURCE_ROOT; };
+		365A96300BE05A3800786213 /* SDL_blit_A.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_A.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_blit_A.c"; sourceTree = SOURCE_ROOT; };
+		365A96310BE05A3800786213 /* SDL_blit_0.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_0.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_blit_0.c"; sourceTree = SOURCE_ROOT; };
+		365A96320BE05A3800786213 /* SDL_RLEaccel.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_RLEaccel.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_RLEaccel.c"; sourceTree = SOURCE_ROOT; };
+		365A96330BE05A3800786213 /* SDL_yuv_sw.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_yuv_sw.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_yuv_sw.c"; sourceTree = SOURCE_ROOT; };
+		365A96340BE05A3800786213 /* SDL_bmp.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_bmp.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_bmp.c"; sourceTree = SOURCE_ROOT; };
+		365A96350BE05A3800786213 /* SDL_pixels.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_pixels.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_pixels.c"; sourceTree = SOURCE_ROOT; };
+		365A96360BE05A3800786213 /* SDL_surface.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_surface.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_surface.c"; sourceTree = SOURCE_ROOT; };
+		365A96370BE05A3800786213 /* SDL_blit_N.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_N.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_blit_N.c"; sourceTree = SOURCE_ROOT; };
+		365A96380BE05A3800786213 /* SDL_video.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_video.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_video.c"; sourceTree = SOURCE_ROOT; };
+		365A96390BE05A3800786213 /* SDL_stretch.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_stretch.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_stretch.c"; sourceTree = SOURCE_ROOT; };
+		365A963A0BE05A3800786213 /* SDL_blit_1.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit_1.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_blit_1.c"; sourceTree = SOURCE_ROOT; };
+		365A963B0BE05A3800786213 /* SDL_blit.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_blit.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_blit.c"; sourceTree = SOURCE_ROOT; };
+		365A963C0BE05A3800786213 /* SDL_yuv_mmx.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_yuv_mmx.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_yuv_mmx.c"; sourceTree = SOURCE_ROOT; };
+		365A963D0BE05A3800786213 /* SDL_yuv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_yuv.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_yuv.c"; sourceTree = SOURCE_ROOT; };
+		365A963E0BE05A3800786213 /* SDL_gamma.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_gamma.c; path = "../extlib/src/SDL-1.2.15/src/video/SDL_gamma.c"; sourceTree = SOURCE_ROOT; };
+		365A964F0BE05A5700786213 /* SDL_QuartzWM.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzWM.m; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzWM.m"; sourceTree = SOURCE_ROOT; };
+		365A96510BE05A5700786213 /* SDL_QuartzVideo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_QuartzVideo.h; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzVideo.h"; sourceTree = SOURCE_ROOT; };
+		365A96520BE05A5700786213 /* SDL_QuartzGL.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzGL.m; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzGL.m"; sourceTree = SOURCE_ROOT; };
+		365A96530BE05A5700786213 /* SDL_QuartzVideo.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzVideo.m; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzVideo.m"; sourceTree = SOURCE_ROOT; };
+		365A96540BE05A5700786213 /* SDL_QuartzKeys.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_QuartzKeys.h; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzKeys.h"; sourceTree = SOURCE_ROOT; };
+		365A96550BE05A5700786213 /* SDL_QuartzWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzWindow.m; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzWindow.m"; sourceTree = SOURCE_ROOT; };
+		365A96560BE05A5700786213 /* SDL_QuartzWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_QuartzWindow.h; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzWindow.h"; sourceTree = SOURCE_ROOT; };
+		365A96570BE05A5700786213 /* SDL_QuartzEvents.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDL_QuartzEvents.m; path = "../extlib/src/SDL-1.2.15/src/video/quartz/SDL_QuartzEvents.m"; sourceTree = SOURCE_ROOT; };
+		365A96580BE05A5700786213 /* CGS.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CGS.h; path = "../extlib/src/SDL-1.2.15/src/video/quartz/CGS.h"; sourceTree = SOURCE_ROOT; };
+		365A96870BE05AE400786213 /* SDL_mixer_m68k.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_mixer_m68k.c; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_mixer_m68k.c"; sourceTree = SOURCE_ROOT; };
+		365A96880BE05AE400786213 /* SDL_mixer_m68k.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer_m68k.h; path = "../extlib/src/SDL-1.2.15/src/audio/SDL_mixer_m68k.h"; sourceTree = SOURCE_ROOT; };
 		365A98290BE05D3600786213 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		365A98430BE05D5E00786213 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
 		365A985B0BE05D8300786213 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		365A993F0BE05DBB00786213 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		365A99E00BE05DCC00786213 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		365A9A050BE05E0800786213 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		365A9E890BE0637D00786213 /* SDL_cpuinfo.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_cpuinfo.c; path = "../extlib/src/SDL-1.2.13/src/cpuinfo/SDL_cpuinfo.c"; sourceTree = SOURCE_ROOT; };
-		365A9E910BE063BD00786213 /* SDL_rwops.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_rwops.c; path = "../extlib/src/SDL-1.2.13/src/file/SDL_rwops.c"; sourceTree = SOURCE_ROOT; };
-		365A9ECE0BE0651A00786213 /* SDL_coreaudio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_coreaudio.c; path = "../extlib/src/SDL-1.2.13/src/audio/macosx/SDL_coreaudio.c"; sourceTree = SOURCE_ROOT; };
-		365A9ECF0BE0651A00786213 /* SDL_coreaudio.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_coreaudio.h; path = "../extlib/src/SDL-1.2.13/src/audio/macosx/SDL_coreaudio.h"; sourceTree = SOURCE_ROOT; };
-		365A9EE00BE0658B00786213 /* AudioFileReaderThread.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = AudioFileReaderThread.c; path = "../extlib/src/SDL-1.2.13/src/cdrom/macosx/AudioFileReaderThread.c"; sourceTree = SOURCE_ROOT; };
+		365A9E890BE0637D00786213 /* SDL_cpuinfo.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_cpuinfo.c; path = "../extlib/src/SDL-1.2.15/src/cpuinfo/SDL_cpuinfo.c"; sourceTree = SOURCE_ROOT; };
+		365A9E910BE063BD00786213 /* SDL_rwops.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_rwops.c; path = "../extlib/src/SDL-1.2.15/src/file/SDL_rwops.c"; sourceTree = SOURCE_ROOT; };
+		365A9ECE0BE0651A00786213 /* SDL_coreaudio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = SDL_coreaudio.c; path = "../extlib/src/SDL-1.2.15/src/audio/macosx/SDL_coreaudio.c"; sourceTree = SOURCE_ROOT; };
+		365A9ECF0BE0651A00786213 /* SDL_coreaudio.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_coreaudio.h; path = "../extlib/src/SDL-1.2.15/src/audio/macosx/SDL_coreaudio.h"; sourceTree = SOURCE_ROOT; };
+		365A9EE00BE0658B00786213 /* AudioFileReaderThread.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = AudioFileReaderThread.c; path = "../extlib/src/SDL-1.2.15/src/cdrom/macosx/AudioFileReaderThread.c"; sourceTree = SOURCE_ROOT; };
 		365A9EF90BE0669400786213 /* SDL_config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDL_config.h; sourceTree = SOURCE_ROOT; };
 		365D35A50BE428E400D1832A /* libsmpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsmpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		365D35AD0BE4292900D1832A /* MPEGring.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = MPEGring.cpp; path = ../extlib/src/smpeg/MPEGring.cpp; sourceTree = SOURCE_ROOT; };
@@ -1084,78 +1082,78 @@
 		365D36020BE42A6400D1832A /* MPEG.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MPEG.h; path = ../extlib/src/smpeg/MPEG.h; sourceTree = SOURCE_ROOT; };
 		365D36030BE42A6400D1832A /* MPEGfilter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MPEGfilter.h; path = ../extlib/src/smpeg/MPEGfilter.h; sourceTree = SOURCE_ROOT; };
 		365D39E30BE42F2100D1832A /* libSDL_mixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDL_mixer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		365D39ED0BE42F9C00D1832A /* effect_position.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = effect_position.c; path = "../extlib/src/SDL_mixer-1.2.8/effect_position.c"; sourceTree = SOURCE_ROOT; };
-		365D39EE0BE42F9C00D1832A /* dynamic_ogg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dynamic_ogg.c; path = "../extlib/src/SDL_mixer-1.2.8/dynamic_ogg.c"; sourceTree = SOURCE_ROOT; };
-		365D39EF0BE42F9C00D1832A /* dynamic_mp3.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dynamic_mp3.c; path = "../extlib/src/SDL_mixer-1.2.8/dynamic_mp3.c"; sourceTree = SOURCE_ROOT; };
-		365D39F00BE42F9C00D1832A /* load_voc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_voc.c; path = "../extlib/src/SDL_mixer-1.2.8/load_voc.c"; sourceTree = SOURCE_ROOT; };
-		365D39F10BE42F9C00D1832A /* load_ogg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_ogg.c; path = "../extlib/src/SDL_mixer-1.2.8/load_ogg.c"; sourceTree = SOURCE_ROOT; };
-		365D39F20BE42F9C00D1832A /* load_aiff.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_aiff.c; path = "../extlib/src/SDL_mixer-1.2.8/load_aiff.c"; sourceTree = SOURCE_ROOT; };
-		365D39F30BE42F9C00D1832A /* wavestream.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = wavestream.c; path = "../extlib/src/SDL_mixer-1.2.8/wavestream.c"; sourceTree = SOURCE_ROOT; };
-		365D39F40BE42F9C00D1832A /* music_cmd.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = music_cmd.c; path = "../extlib/src/SDL_mixer-1.2.8/music_cmd.c"; sourceTree = SOURCE_ROOT; };
-		365D39F50BE42F9C00D1832A /* music.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = music.c; path = "../extlib/src/SDL_mixer-1.2.8/music.c"; sourceTree = SOURCE_ROOT; };
-		365D39F60BE42F9C00D1832A /* mixer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mixer.c; path = "../extlib/src/SDL_mixer-1.2.8/mixer.c"; sourceTree = SOURCE_ROOT; };
-		365D39F70BE42F9C00D1832A /* effects_internal.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = effects_internal.c; path = "../extlib/src/SDL_mixer-1.2.8/effects_internal.c"; sourceTree = SOURCE_ROOT; };
-		365D39F80BE42F9C00D1832A /* music_ogg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = music_ogg.c; path = "../extlib/src/SDL_mixer-1.2.8/music_ogg.c"; sourceTree = SOURCE_ROOT; };
-		365D39F90BE42F9C00D1832A /* effect_stereoreverse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = effect_stereoreverse.c; path = "../extlib/src/SDL_mixer-1.2.8/effect_stereoreverse.c"; sourceTree = SOURCE_ROOT; };
-		365D3A070BE42FA800D1832A /* dynamic_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dynamic_ogg.h; path = "../extlib/src/SDL_mixer-1.2.8/dynamic_ogg.h"; sourceTree = SOURCE_ROOT; };
-		365D3A080BE42FA800D1832A /* dynamic_mp3.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dynamic_mp3.h; path = "../extlib/src/SDL_mixer-1.2.8/dynamic_mp3.h"; sourceTree = SOURCE_ROOT; };
-		365D3A090BE42FA800D1832A /* load_voc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = load_voc.h; path = "../extlib/src/SDL_mixer-1.2.8/load_voc.h"; sourceTree = SOURCE_ROOT; };
-		365D3A0A0BE42FA800D1832A /* load_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = load_ogg.h; path = "../extlib/src/SDL_mixer-1.2.8/load_ogg.h"; sourceTree = SOURCE_ROOT; };
-		365D3A0B0BE42FA800D1832A /* load_aiff.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = load_aiff.h; path = "../extlib/src/SDL_mixer-1.2.8/load_aiff.h"; sourceTree = SOURCE_ROOT; };
-		365D3A0C0BE42FA800D1832A /* wavestream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = wavestream.h; path = "../extlib/src/SDL_mixer-1.2.8/wavestream.h"; sourceTree = SOURCE_ROOT; };
-		365D3A0D0BE42FA800D1832A /* SDL_mixer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer.h; path = "../extlib/src/SDL_mixer-1.2.8/SDL_mixer.h"; sourceTree = SOURCE_ROOT; };
-		365D3A0E0BE42FA800D1832A /* music_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = music_ogg.h; path = "../extlib/src/SDL_mixer-1.2.8/music_ogg.h"; sourceTree = SOURCE_ROOT; };
-		365D3A0F0BE42FA800D1832A /* music_cmd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = music_cmd.h; path = "../extlib/src/SDL_mixer-1.2.8/music_cmd.h"; sourceTree = SOURCE_ROOT; };
-		365D3A100BE42FA800D1832A /* effects_internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = effects_internal.h; path = "../extlib/src/SDL_mixer-1.2.8/effects_internal.h"; sourceTree = SOURCE_ROOT; };
-		365D3A1F0BE4306A00D1832A /* load_mod.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_mod.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/load_mod.c"; sourceTree = SOURCE_ROOT; };
-		365D3A200BE4306A00D1832A /* mwav.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mwav.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mwav.c"; sourceTree = SOURCE_ROOT; };
-		365D3A210BE4306A00D1832A /* sloader.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = sloader.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/sloader.c"; sourceTree = SOURCE_ROOT; };
-		365D3A220BE4306A00D1832A /* virtch2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = virtch2.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/virtch2.c"; sourceTree = SOURCE_ROOT; };
-		365D3A230BE4306A00D1832A /* munitrk.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = munitrk.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/munitrk.c"; sourceTree = SOURCE_ROOT; };
-		365D3A240BE4306A00D1832A /* mikmod_build.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mikmod_build.h; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mikmod_build.h"; sourceTree = SOURCE_ROOT; };
-		365D3A250BE4306A00D1832A /* virtch.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = virtch.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/virtch.c"; sourceTree = SOURCE_ROOT; };
-		365D3A260BE4306A00D1832A /* load_s3m.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_s3m.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/load_s3m.c"; sourceTree = SOURCE_ROOT; };
-		365D3A270BE4306A00D1832A /* load_xm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_xm.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/load_xm.c"; sourceTree = SOURCE_ROOT; };
-		365D3A280BE4306A00D1832A /* npertab.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = npertab.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/npertab.c"; sourceTree = SOURCE_ROOT; };
-		365D3A290BE4306A00D1832A /* virtch_common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = virtch_common.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/virtch_common.c"; sourceTree = SOURCE_ROOT; };
-		365D3A2A0BE4306A00D1832A /* mmerror.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mmerror.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mmerror.c"; sourceTree = SOURCE_ROOT; };
-		365D3A2B0BE4306A00D1832A /* load_it.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_it.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/load_it.c"; sourceTree = SOURCE_ROOT; };
-		365D3A2C0BE4306A00D1832A /* mdriver.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mdriver.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mdriver.c"; sourceTree = SOURCE_ROOT; };
-		365D3A2D0BE4306A00D1832A /* mikmod_internals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mikmod_internals.h; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mikmod_internals.h"; sourceTree = SOURCE_ROOT; };
-		365D3A2E0BE4306A00D1832A /* mmalloc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mmalloc.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mmalloc.c"; sourceTree = SOURCE_ROOT; };
-		365D3A2F0BE4306A00D1832A /* mplayer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mplayer.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mplayer.c"; sourceTree = SOURCE_ROOT; };
-		365D3A300BE4306A00D1832A /* mlutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mlutil.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mlutil.c"; sourceTree = SOURCE_ROOT; };
-		365D3A310BE4306A00D1832A /* mmio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mmio.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mmio.c"; sourceTree = SOURCE_ROOT; };
-		365D3A320BE4306A00D1832A /* mloader.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mloader.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mloader.c"; sourceTree = SOURCE_ROOT; };
-		365D3A330BE4306A00D1832A /* drv_nos.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = drv_nos.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/drv_nos.c"; sourceTree = SOURCE_ROOT; };
-		365D3A340BE4306A00D1832A /* mikmod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mikmod.h; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mikmod.h"; sourceTree = SOURCE_ROOT; };
-		365D3A350BE4306A00D1832A /* mlreg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mlreg.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mlreg.c"; sourceTree = SOURCE_ROOT; };
-		365D3A360BE4306A00D1832A /* mdreg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mdreg.c; path = "../extlib/src/SDL_mixer-1.2.8/mikmod/mdreg.c"; sourceTree = SOURCE_ROOT; };
-		365D3A370BE430AA00D1832A /* timidity.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = timidity.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/timidity.h"; sourceTree = SOURCE_ROOT; };
-		365D3A380BE430AA00D1832A /* timidity.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = timidity.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/timidity.c"; sourceTree = SOURCE_ROOT; };
-		365D3A390BE430AA00D1832A /* tables.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tables.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/tables.h"; sourceTree = SOURCE_ROOT; };
-		365D3A3A0BE430AA00D1832A /* tables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = tables.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/tables.c"; sourceTree = SOURCE_ROOT; };
-		365D3A3B0BE430AA00D1832A /* sdl_c.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = sdl_c.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/sdl_c.c"; sourceTree = SOURCE_ROOT; };
-		365D3A3C0BE430AA00D1832A /* sdl_a.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = sdl_a.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/sdl_a.c"; sourceTree = SOURCE_ROOT; };
-		365D3A3D0BE430AA00D1832A /* resample.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = resample.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/resample.h"; sourceTree = SOURCE_ROOT; };
-		365D3A3E0BE430AA00D1832A /* resample.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = resample.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/resample.c"; sourceTree = SOURCE_ROOT; };
-		365D3A3F0BE430AA00D1832A /* readmidi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = readmidi.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/readmidi.h"; sourceTree = SOURCE_ROOT; };
-		365D3A400BE430AA00D1832A /* readmidi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = readmidi.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/readmidi.c"; sourceTree = SOURCE_ROOT; };
-		365D3A410BE430AA00D1832A /* playmidi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = playmidi.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/playmidi.h"; sourceTree = SOURCE_ROOT; };
-		365D3A420BE430AA00D1832A /* playmidi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = playmidi.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/playmidi.c"; sourceTree = SOURCE_ROOT; };
-		365D3A430BE430AA00D1832A /* output.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = output.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/output.h"; sourceTree = SOURCE_ROOT; };
-		365D3A440BE430AA00D1832A /* output.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = output.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/output.c"; sourceTree = SOURCE_ROOT; };
-		365D3A450BE430AA00D1832A /* common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = common.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/common.h"; sourceTree = SOURCE_ROOT; };
-		365D3A460BE430AA00D1832A /* common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = common.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/common.c"; sourceTree = SOURCE_ROOT; };
-		365D3A470BE430AA00D1832A /* filter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = filter.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/filter.h"; sourceTree = SOURCE_ROOT; };
-		365D3A480BE430AA00D1832A /* mix.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mix.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/mix.c"; sourceTree = SOURCE_ROOT; };
-		365D3A490BE430AA00D1832A /* mix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mix.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/mix.h"; sourceTree = SOURCE_ROOT; };
-		365D3A4A0BE430AA00D1832A /* instrum.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = instrum.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/instrum.h"; sourceTree = SOURCE_ROOT; };
-		365D3A4B0BE430AA00D1832A /* instrum.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = instrum.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/instrum.c"; sourceTree = SOURCE_ROOT; };
-		365D3A4C0BE430AA00D1832A /* ctrlmode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ctrlmode.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/ctrlmode.h"; sourceTree = SOURCE_ROOT; };
-		365D3A4D0BE430AA00D1832A /* filter.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = filter.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/filter.c"; sourceTree = SOURCE_ROOT; };
-		365D3A4E0BE430AA00D1832A /* ctrlmode.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ctrlmode.c; path = "../extlib/src/SDL_mixer-1.2.8/timidity/ctrlmode.c"; sourceTree = SOURCE_ROOT; };
-		365D3A4F0BE430AA00D1832A /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = config.h; path = "../extlib/src/SDL_mixer-1.2.8/timidity/config.h"; sourceTree = SOURCE_ROOT; };
+		365D39ED0BE42F9C00D1832A /* effect_position.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = effect_position.c; path = "../extlib/src/SDL_mixer-1.2.12/effect_position.c"; sourceTree = SOURCE_ROOT; };
+		365D39EE0BE42F9C00D1832A /* dynamic_ogg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dynamic_ogg.c; path = "../extlib/src/SDL_mixer-1.2.12/dynamic_ogg.c"; sourceTree = SOURCE_ROOT; };
+		365D39EF0BE42F9C00D1832A /* dynamic_mp3.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dynamic_mp3.c; path = "../extlib/src/SDL_mixer-1.2.12/dynamic_mp3.c"; sourceTree = SOURCE_ROOT; };
+		365D39F00BE42F9C00D1832A /* load_voc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_voc.c; path = "../extlib/src/SDL_mixer-1.2.12/load_voc.c"; sourceTree = SOURCE_ROOT; };
+		365D39F10BE42F9C00D1832A /* load_ogg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_ogg.c; path = "../extlib/src/SDL_mixer-1.2.12/load_ogg.c"; sourceTree = SOURCE_ROOT; };
+		365D39F20BE42F9C00D1832A /* load_aiff.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_aiff.c; path = "../extlib/src/SDL_mixer-1.2.12/load_aiff.c"; sourceTree = SOURCE_ROOT; };
+		365D39F30BE42F9C00D1832A /* wavestream.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = wavestream.c; path = "../extlib/src/SDL_mixer-1.2.12/wavestream.c"; sourceTree = SOURCE_ROOT; };
+		365D39F40BE42F9C00D1832A /* music_cmd.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = music_cmd.c; path = "../extlib/src/SDL_mixer-1.2.12/music_cmd.c"; sourceTree = SOURCE_ROOT; };
+		365D39F50BE42F9C00D1832A /* music.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = music.c; path = "../extlib/src/SDL_mixer-1.2.12/music.c"; sourceTree = SOURCE_ROOT; };
+		365D39F60BE42F9C00D1832A /* mixer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mixer.c; path = "../extlib/src/SDL_mixer-1.2.12/mixer.c"; sourceTree = SOURCE_ROOT; };
+		365D39F70BE42F9C00D1832A /* effects_internal.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = effects_internal.c; path = "../extlib/src/SDL_mixer-1.2.12/effects_internal.c"; sourceTree = SOURCE_ROOT; };
+		365D39F80BE42F9C00D1832A /* music_ogg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = music_ogg.c; path = "../extlib/src/SDL_mixer-1.2.12/music_ogg.c"; sourceTree = SOURCE_ROOT; };
+		365D39F90BE42F9C00D1832A /* effect_stereoreverse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = effect_stereoreverse.c; path = "../extlib/src/SDL_mixer-1.2.12/effect_stereoreverse.c"; sourceTree = SOURCE_ROOT; };
+		365D3A070BE42FA800D1832A /* dynamic_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dynamic_ogg.h; path = "../extlib/src/SDL_mixer-1.2.12/dynamic_ogg.h"; sourceTree = SOURCE_ROOT; };
+		365D3A080BE42FA800D1832A /* dynamic_mp3.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dynamic_mp3.h; path = "../extlib/src/SDL_mixer-1.2.12/dynamic_mp3.h"; sourceTree = SOURCE_ROOT; };
+		365D3A090BE42FA800D1832A /* load_voc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = load_voc.h; path = "../extlib/src/SDL_mixer-1.2.12/load_voc.h"; sourceTree = SOURCE_ROOT; };
+		365D3A0A0BE42FA800D1832A /* load_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = load_ogg.h; path = "../extlib/src/SDL_mixer-1.2.12/load_ogg.h"; sourceTree = SOURCE_ROOT; };
+		365D3A0B0BE42FA800D1832A /* load_aiff.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = load_aiff.h; path = "../extlib/src/SDL_mixer-1.2.12/load_aiff.h"; sourceTree = SOURCE_ROOT; };
+		365D3A0C0BE42FA800D1832A /* wavestream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = wavestream.h; path = "../extlib/src/SDL_mixer-1.2.12/wavestream.h"; sourceTree = SOURCE_ROOT; };
+		365D3A0D0BE42FA800D1832A /* SDL_mixer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDL_mixer.h; path = "../extlib/src/SDL_mixer-1.2.12/SDL_mixer.h"; sourceTree = SOURCE_ROOT; };
+		365D3A0E0BE42FA800D1832A /* music_ogg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = music_ogg.h; path = "../extlib/src/SDL_mixer-1.2.12/music_ogg.h"; sourceTree = SOURCE_ROOT; };
+		365D3A0F0BE42FA800D1832A /* music_cmd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = music_cmd.h; path = "../extlib/src/SDL_mixer-1.2.12/music_cmd.h"; sourceTree = SOURCE_ROOT; };
+		365D3A100BE42FA800D1832A /* effects_internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = effects_internal.h; path = "../extlib/src/SDL_mixer-1.2.12/effects_internal.h"; sourceTree = SOURCE_ROOT; };
+		365D3A1F0BE4306A00D1832A /* load_mod.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_mod.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/load_mod.c"; sourceTree = SOURCE_ROOT; };
+		365D3A200BE4306A00D1832A /* mwav.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mwav.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mwav.c"; sourceTree = SOURCE_ROOT; };
+		365D3A210BE4306A00D1832A /* sloader.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = sloader.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/sloader.c"; sourceTree = SOURCE_ROOT; };
+		365D3A220BE4306A00D1832A /* virtch2.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = virtch2.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/virtch2.c"; sourceTree = SOURCE_ROOT; };
+		365D3A230BE4306A00D1832A /* munitrk.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = munitrk.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/munitrk.c"; sourceTree = SOURCE_ROOT; };
+		365D3A240BE4306A00D1832A /* mikmod_build.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mikmod_build.h; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mikmod_build.h"; sourceTree = SOURCE_ROOT; };
+		365D3A250BE4306A00D1832A /* virtch.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = virtch.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/virtch.c"; sourceTree = SOURCE_ROOT; };
+		365D3A260BE4306A00D1832A /* load_s3m.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_s3m.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/load_s3m.c"; sourceTree = SOURCE_ROOT; };
+		365D3A270BE4306A00D1832A /* load_xm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_xm.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/load_xm.c"; sourceTree = SOURCE_ROOT; };
+		365D3A280BE4306A00D1832A /* npertab.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = npertab.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/npertab.c"; sourceTree = SOURCE_ROOT; };
+		365D3A290BE4306A00D1832A /* virtch_common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = virtch_common.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/virtch_common.c"; sourceTree = SOURCE_ROOT; };
+		365D3A2A0BE4306A00D1832A /* mmerror.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mmerror.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mmerror.c"; sourceTree = SOURCE_ROOT; };
+		365D3A2B0BE4306A00D1832A /* load_it.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = load_it.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/load_it.c"; sourceTree = SOURCE_ROOT; };
+		365D3A2C0BE4306A00D1832A /* mdriver.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mdriver.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mdriver.c"; sourceTree = SOURCE_ROOT; };
+		365D3A2D0BE4306A00D1832A /* mikmod_internals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mikmod_internals.h; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mikmod_internals.h"; sourceTree = SOURCE_ROOT; };
+		365D3A2E0BE4306A00D1832A /* mmalloc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mmalloc.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mmalloc.c"; sourceTree = SOURCE_ROOT; };
+		365D3A2F0BE4306A00D1832A /* mplayer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mplayer.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mplayer.c"; sourceTree = SOURCE_ROOT; };
+		365D3A300BE4306A00D1832A /* mlutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mlutil.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mlutil.c"; sourceTree = SOURCE_ROOT; };
+		365D3A310BE4306A00D1832A /* mmio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mmio.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mmio.c"; sourceTree = SOURCE_ROOT; };
+		365D3A320BE4306A00D1832A /* mloader.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mloader.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mloader.c"; sourceTree = SOURCE_ROOT; };
+		365D3A330BE4306A00D1832A /* drv_nos.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = drv_nos.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/drv_nos.c"; sourceTree = SOURCE_ROOT; };
+		365D3A340BE4306A00D1832A /* mikmod.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mikmod.h; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mikmod.h"; sourceTree = SOURCE_ROOT; };
+		365D3A350BE4306A00D1832A /* mlreg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mlreg.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mlreg.c"; sourceTree = SOURCE_ROOT; };
+		365D3A360BE4306A00D1832A /* mdreg.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mdreg.c; path = "../extlib/src/SDL_mixer-1.2.12/mikmod/mdreg.c"; sourceTree = SOURCE_ROOT; };
+		365D3A370BE430AA00D1832A /* timidity.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = timidity.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/timidity.h"; sourceTree = SOURCE_ROOT; };
+		365D3A380BE430AA00D1832A /* timidity.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = timidity.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/timidity.c"; sourceTree = SOURCE_ROOT; };
+		365D3A390BE430AA00D1832A /* tables.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tables.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/tables.h"; sourceTree = SOURCE_ROOT; };
+		365D3A3A0BE430AA00D1832A /* tables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = tables.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/tables.c"; sourceTree = SOURCE_ROOT; };
+		365D3A3B0BE430AA00D1832A /* sdl_c.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = sdl_c.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/sdl_c.c"; sourceTree = SOURCE_ROOT; };
+		365D3A3C0BE430AA00D1832A /* sdl_a.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = sdl_a.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/sdl_a.c"; sourceTree = SOURCE_ROOT; };
+		365D3A3D0BE430AA00D1832A /* resample.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = resample.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/resample.h"; sourceTree = SOURCE_ROOT; };
+		365D3A3E0BE430AA00D1832A /* resample.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = resample.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/resample.c"; sourceTree = SOURCE_ROOT; };
+		365D3A3F0BE430AA00D1832A /* readmidi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = readmidi.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/readmidi.h"; sourceTree = SOURCE_ROOT; };
+		365D3A400BE430AA00D1832A /* readmidi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = readmidi.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/readmidi.c"; sourceTree = SOURCE_ROOT; };
+		365D3A410BE430AA00D1832A /* playmidi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = playmidi.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/playmidi.h"; sourceTree = SOURCE_ROOT; };
+		365D3A420BE430AA00D1832A /* playmidi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = playmidi.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/playmidi.c"; sourceTree = SOURCE_ROOT; };
+		365D3A430BE430AA00D1832A /* output.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = output.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/output.h"; sourceTree = SOURCE_ROOT; };
+		365D3A440BE430AA00D1832A /* output.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = output.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/output.c"; sourceTree = SOURCE_ROOT; };
+		365D3A450BE430AA00D1832A /* common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = common.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/common.h"; sourceTree = SOURCE_ROOT; };
+		365D3A460BE430AA00D1832A /* common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = common.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/common.c"; sourceTree = SOURCE_ROOT; };
+		365D3A470BE430AA00D1832A /* filter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = filter.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/filter.h"; sourceTree = SOURCE_ROOT; };
+		365D3A480BE430AA00D1832A /* mix.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mix.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/mix.c"; sourceTree = SOURCE_ROOT; };
+		365D3A490BE430AA00D1832A /* mix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mix.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/mix.h"; sourceTree = SOURCE_ROOT; };
+		365D3A4A0BE430AA00D1832A /* instrum.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = instrum.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/instrum.h"; sourceTree = SOURCE_ROOT; };
+		365D3A4B0BE430AA00D1832A /* instrum.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = instrum.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/instrum.c"; sourceTree = SOURCE_ROOT; };
+		365D3A4C0BE430AA00D1832A /* ctrlmode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ctrlmode.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/ctrlmode.h"; sourceTree = SOURCE_ROOT; };
+		365D3A4D0BE430AA00D1832A /* filter.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = filter.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/filter.c"; sourceTree = SOURCE_ROOT; };
+		365D3A4E0BE430AA00D1832A /* ctrlmode.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ctrlmode.c; path = "../extlib/src/SDL_mixer-1.2.12/timidity/ctrlmode.c"; sourceTree = SOURCE_ROOT; };
+		365D3A4F0BE430AA00D1832A /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = config.h; path = "../extlib/src/SDL_mixer-1.2.12/timidity/config.h"; sourceTree = SOURCE_ROOT; };
 		365D3AFE0BE4333900D1832A /* libSDL_image.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDL_image.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		365D3B0A0BE4338800D1832A /* IMG_pnm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = IMG_pnm.c; path = "../extlib/src/SDL_image-1.2.6/IMG_pnm.c"; sourceTree = SOURCE_ROOT; };
 		365D3B0B0BE4338800D1832A /* IMG_lbm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = IMG_lbm.c; path = "../extlib/src/SDL_image-1.2.6/IMG_lbm.c"; sourceTree = SOURCE_ROOT; };
@@ -1355,8 +1353,8 @@
 		365D3D0A0BE43D1600D1832A /* vorbisfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = vorbisfile.h; path = "../extlib/src/libvorbis-1.2.0/include/vorbis/vorbisfile.h"; sourceTree = SOURCE_ROOT; };
 		365D3E910BE44A2300D1832A /* ftsystem.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ftsystem.c; path = "../extlib/src/freetype-2.3.5/builds/unix/ftsystem.c"; sourceTree = SOURCE_ROOT; };
 		365D3F4C0BE4507300D1832A /* ft2build.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ft2build.h; path = "../extlib/src/freetype-2.3.5/include/ft2build.h"; sourceTree = SOURCE_ROOT; };
-		365D40E90BE466AA00D1832A /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = "../extlib/src/SDL-1.2.13/src/main/macosx/SDLMain.m"; sourceTree = SOURCE_ROOT; };
-		365D40EA0BE466AA00D1832A /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = "../extlib/src/SDL-1.2.13/src/main/macosx/SDLMain.h"; sourceTree = SOURCE_ROOT; };
+		365D40E90BE466AA00D1832A /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = "../extlib/src/SDL-1.2.15/src/main/macosx/SDLMain.m"; sourceTree = SOURCE_ROOT; };
+		365D40EA0BE466AA00D1832A /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = "../extlib/src/SDL-1.2.15/src/main/macosx/SDLMain.h"; sourceTree = SOURCE_ROOT; };
 		365D418F0BE46DFB00D1832A /* ONScripter.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ONScripter.icns; sourceTree = SOURCE_ROOT; };
 		36D4F7A40D5D0C6D00B0FA18 /* DirPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = DirPaths.cpp; path = ../DirPaths.cpp; sourceTree = SOURCE_ROOT; };
 		36D4F7A50D5D0C6D00B0FA18 /* DirPaths.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DirPaths.h; path = ../DirPaths.h; sourceTree = SOURCE_ROOT; };
@@ -1403,8 +1401,6 @@
 		E27C169B10D9AEAF0079C2A0 /* sarconv.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = sarconv.1; sourceTree = "<group>"; };
 		E27C169C10D9AEAF0079C2A0 /* sardec.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = sardec.1; sourceTree = "<group>"; };
 		E27F9B4011BED30B00E19C12 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SDLMain.nib; sourceTree = "<group>"; };
-		E27F9B8811BEE59100E19C12 /* ONSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONSApplication.h; sourceTree = "<group>"; };
-		E27F9B8911BEE59100E19C12 /* ONSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONSApplication.m; sourceTree = "<group>"; };
 		E2A942301102D39000FB6580 /* ons-en.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "ons-en.icns"; sourceTree = "<group>"; };
 		E2B29D34123B12A80069C2D7 /* cocoa_alertbox_result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoa_alertbox_result.h; sourceTree = "<group>"; };
 		E2BB20BC11BE0F2000BD0894 /* ONSCocoaUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONSCocoaUIController.h; sourceTree = "<group>"; };
@@ -1425,6 +1421,7 @@
 		E2F0350510D8A510006F30BA /* nsaconv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nsaconv; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F0351010D8A51F006F30BA /* nscdec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nscdec; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F0351E10D8A52F006F30BA /* nscmake */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nscmake; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55DAD791FE4871400DAA7EA /* native_midi_macosx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = native_midi_macosx.c; path = "../extlib/src/SDL_mixer-1.2.12/native_midi/native_midi_macosx.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1727,6 +1724,7 @@
 				363F3B610BE489C50065F874 /* native_midi_common.c */,
 				363F3B620BE489C50065F874 /* native_midi_common.h */,
 				363F3B630BE489C50065F874 /* native_midi_mac.c */,
+				E55DAD791FE4871400DAA7EA /* native_midi_macosx.c */,
 				363F3B640BE489C50065F874 /* native_midi_win32.c */,
 				363F3B650BE489C50065F874 /* native_midi.h */,
 			);
@@ -2192,7 +2190,6 @@
 			isa = PBXGroup;
 			children = (
 				365A964F0BE05A5700786213 /* SDL_QuartzWM.m */,
-				365A96500BE05A5700786213 /* SDL_QuartzYUV.m */,
 				365A96510BE05A5700786213 /* SDL_QuartzVideo.h */,
 				365A96520BE05A5700786213 /* SDL_QuartzGL.m */,
 				365A96530BE05A5700786213 /* SDL_QuartzVideo.m */,
@@ -2788,8 +2785,6 @@
 			children = (
 				E2E6265C11BDA1B700C2E3C5 /* SDLMain.h */,
 				E2E6265D11BDA1B700C2E3C5 /* SDLMain.m */,
-				E27F9B8811BEE59100E19C12 /* ONSApplication.h */,
-				E27F9B8911BEE59100E19C12 /* ONSApplication.m */,
 			);
 			path = SDL;
 			sourceTree = "<group>";
@@ -3370,6 +3365,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ONScripter" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -3432,13 +3430,13 @@
 			files = (
 			);
 			inputPaths = (
-				"$(BUILD_DIR)/$(BUILD_STYLE)/libjpeg.a",
+				"${CONFIGURATION_BUILD_DIR}/libjpeg.a",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ranlib ${BUILD_DIR}/${BUILD_STYLE}/libjpeg.a";
+			shellScript = "ranlib ${CONFIGURATION_BUILD_DIR}/libjpeg.a";
 		};
 		365D40D60BE4654000D1832A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3446,13 +3444,13 @@
 			files = (
 			);
 			inputPaths = (
-				"ranlib ${BUILD_DIR}/${BUILD_STYLE}/libSDL.a",
+				"ranlib ${CONFIGURATION_BUILD_DIR}/libSDL.a",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ranlib ${BUILD_DIR}/${BUILD_STYLE}/libSDL.a";
+			shellScript = "ranlib ${CONFIGURATION_BUILD_DIR}/libSDL.a";
 		};
 		E27C16A710D9AFE00079C2A0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3671,7 +3669,6 @@
 				365A964D0BE05A3800786213 /* SDL_yuv.c in Sources */,
 				365A964E0BE05A3800786213 /* SDL_gamma.c in Sources */,
 				365A96590BE05A5700786213 /* SDL_QuartzWM.m in Sources */,
-				365A965A0BE05A5700786213 /* SDL_QuartzYUV.m in Sources */,
 				365A965C0BE05A5700786213 /* SDL_QuartzGL.m in Sources */,
 				365A965D0BE05A5700786213 /* SDL_QuartzVideo.m in Sources */,
 				365A965F0BE05A5700786213 /* SDL_QuartzWindow.m in Sources */,
@@ -3734,6 +3731,7 @@
 				365D3A5F0BE4310D00D1832A /* music_cmd.c in Sources */,
 				365D3A600BE4310D00D1832A /* wavestream.c in Sources */,
 				365D3A610BE4310E00D1832A /* load_aiff.c in Sources */,
+				E55DAD7A1FE4871400DAA7EA /* native_midi_macosx.c in Sources */,
 				365D3A620BE4310E00D1832A /* load_ogg.c in Sources */,
 				365D3A630BE4310F00D1832A /* load_voc.c in Sources */,
 				365D3A640BE4310F00D1832A /* dynamic_mp3.c in Sources */,
@@ -3837,7 +3835,6 @@
 				E25419ED11B8C52A005C490F /* cocoa_encoding.mm in Sources */,
 				E2E6265E11BDA1B700C2E3C5 /* SDLMain.m in Sources */,
 				E2BB20BE11BE0F2000BD0894 /* ONSCocoaUIController.mm in Sources */,
-				E27F9B8A11BEE59100E19C12 /* ONSApplication.m in Sources */,
 				E2E4C0B11335A6B600ECDC3C /* graphics_routines.cpp in Sources */,
 				E2552449133D3C37006DF742 /* ONScripterLabel_effect_breakup.cpp in Sources */,
 				E255244A133D3C37006DF742 /* ONScripterLabel_effect_cascade.cpp in Sources */,
@@ -4198,8 +4195,10 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = libjpeg;
 				ZERO_LINK = YES;
@@ -4209,7 +4208,6 @@
 		365A93520BE04B0000786213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_EXTENSION = a;
 				EXECUTABLE_PREFIX = "";
@@ -4217,9 +4215,11 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = ../extlib/lib/;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = libjpeg;
 				ZERO_LINK = NO;
@@ -4237,8 +4237,10 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-fsigned-char";
 				PREBINDING = NO;
 				PRODUCT_NAME = libogg;
@@ -4249,7 +4251,6 @@
 		365A943D0BE04D2D00786213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_EXTENSION = a;
 				EXECUTABLE_PREFIX = "";
@@ -4257,9 +4258,11 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-fsigned-char";
 				PREBINDING = NO;
 				PRODUCT_NAME = libogg;
@@ -4278,8 +4281,10 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DDARWIN",
 					"-fno-common",
@@ -4297,7 +4302,6 @@
 		365A94710BE0504400786213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_EXTENSION = a;
 				EXECUTABLE_PREFIX = "";
@@ -4305,9 +4309,11 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DDARWIN",
 					"-fno-common",
@@ -4348,8 +4354,10 @@
 					"HAVE_SYS_TYPES_H=1",
 					"HAVE_UNISTD_H=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DPNG_CONFIGURE_LIBPNG";
 				PREBINDING = NO;
 				PRODUCT_NAME = libpng;
@@ -4360,7 +4368,6 @@
 		365A950B0BE0537600786213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_EXTENSION = a;
 				EXECUTABLE_PREFIX = "";
@@ -4383,9 +4390,11 @@
 					"HAVE_SYS_TYPES_H=1",
 					"HAVE_UNISTD_H=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DPNG_CONFIGURE_LIBPNG";
 				PREBINDING = NO;
 				PRODUCT_NAME = libpng;
@@ -4404,9 +4413,11 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D_GNU_SOURCE=1",
 					"-DTARGET_API_MAC_CARBON",
@@ -4427,7 +4438,6 @@
 		365A95780BE0574200786213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_EXTENSION = a;
 				EXECUTABLE_PREFIX = lib;
@@ -4435,10 +4445,12 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D_GNU_SOURCE=1",
 					"-DTARGET_API_MAC_CARBON",
@@ -4467,7 +4479,9 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -4510,7 +4524,6 @@
 		365D35AC0BE428F100D1832A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_DEBUGGING_SYMBOLS = default;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
@@ -4518,8 +4531,10 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -4567,7 +4582,9 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D_GNU_SOURCE=1",
 					"-D_THREAD_SAFE",
@@ -4587,16 +4604,17 @@
 		365D39E90BE42F2700D1832A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_DEBUGGING_SYMBOLS = default;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				GENERATE_MASTER_OBJECT_FILE = YES;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D_GNU_SOURCE=1",
 					"-D_THREAD_SAFE",
@@ -4622,7 +4640,9 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -4661,7 +4681,7 @@
 				OTHER_CFLAGS_QUOTED_8 = "-DVERSION=\"1.2.5\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = SDL_image;
-				USER_HEADER_SEARCH_PATHS = ". ../extlib/src/SDL-1.2.13/include";
+				USER_HEADER_SEARCH_PATHS = ". ../extlib/src/SDL-1.2.15/include";
 				ZERO_LINK = YES;
 			};
 			name = Debug;
@@ -4708,8 +4728,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_5 = "PACKAGE_BUGREPORT=\"\"";
 				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_6 = "PACKAGE=\"sdl_image\"";
 				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_7 = "VERSION=\"1.2.5\"";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -4747,7 +4769,7 @@
 				OTHER_CFLAGS_QUOTED_7 = "-DVERSION=\"1.2.5\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = SDL_image;
-				USER_HEADER_SEARCH_PATHS = ". ../extlib/src/SDL-1.2.13/include";
+				USER_HEADER_SEARCH_PATHS = ". ../extlib/src/SDL-1.2.15/include";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -4761,7 +4783,9 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -4808,14 +4832,15 @@
 		365D3B6E0BE435C800D1832A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_DEBUGGING_SYMBOLS = default;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -4869,7 +4894,9 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DFT_CONFIG_OPTION_SYSTEM_ZLIB",
 					"-DDARWIN_NO_CARBON",
@@ -4888,14 +4915,15 @@
 		365D3BC40BE437B100D1832A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_DEBUGGING_SYMBOLS = default;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DFT_CONFIG_OPTION_SYSTEM_ZLIB",
 					"-DDARWIN_NO_CARBON",
@@ -4925,18 +4953,21 @@
 					"UTF8_FILESYSTEM=1",
 					"USE_OGG_VORBIS=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_PREPROCESS = NO;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "";
 				"OTHER_CFLAGS[arch=i386]" = "-DUSE_X86_GFX";
 				"OTHER_CFLAGS[arch=ppc]" = (
 					"-DUSE_PPC_GFX",
 					"-maltivec",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.denpa.onscripter-en";
 				PRODUCT_NAME = ONScripter;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -4945,7 +4976,6 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4961,19 +4991,22 @@
 					"UTF8_FILESYSTEM=1",
 					"USE_OGG_VORBIS=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_PREPROCESS = NO;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "";
 				"OTHER_CFLAGS[arch=i386]" = "-DUSE_X86_GFX";
 				"OTHER_CFLAGS[arch=ppc]" = (
 					"-DUSE_PPC_GFX",
 					"-maltivec",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.denpa.onscripter-en";
 				PRODUCT_NAME = ONScripter;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 				SEPARATE_STRIP = NO;
 				STRIP_INSTALLED_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -4985,24 +5018,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/\"",
-					"\"$(SRCROOT)/../extlib/src/SDL-1.2.13/include\"",
+					"\"$(SRCROOT)/../extlib/src/SDL-1.2.15/include\"",
 					"\"$(SRCROOT)/../extlib/src/freetype-2.3.5/include\"",
 					"\"$(SRCROOT)/../extlib/src/jpeg-6b\"",
 					"\"$(SRCROOT)/../extlib/src/libogg-1.1.3/include\"",
 					"\"$(SRCROOT)/../extlib/src/libvorbis-1.2.0/include\"",
 					"\"$(SRCROOT)/../extlib/src/libpng-1.2.24\"",
 					"\"$(SRCROOT)/../extlib/src/SDL_image-1.2.6\"",
-					"\"$(SRCROOT)/../extlib/src/SDL_mixer-1.2.8\"",
+					"\"$(SRCROOT)/../extlib/src/SDL_mixer-1.2.12\"",
 					"\"$(SRCROOT)/../extlib/src/SDL_ttf-2.0.8\"",
 					"\"$(SRCROOT)/../extlib/src/smpeg\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -5010,25 +5046,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/\"",
-					"\"$(SRCROOT)/../extlib/src/SDL-1.2.13/include\"",
+					"\"$(SRCROOT)/../extlib/src/SDL-1.2.15/include\"",
 					"\"$(SRCROOT)/../extlib/src/freetype-2.3.5/include\"",
 					"\"$(SRCROOT)/../extlib/src/jpeg-6b\"",
 					"\"$(SRCROOT)/../extlib/src/libogg-1.1.3/include\"",
 					"\"$(SRCROOT)/../extlib/src/libvorbis-1.2.0/include\"",
 					"\"$(SRCROOT)/../extlib/src/libpng-1.2.24\"",
 					"\"$(SRCROOT)/../extlib/src/SDL_image-1.2.6\"",
-					"\"$(SRCROOT)/../extlib/src/SDL_mixer-1.2.8\"",
+					"\"$(SRCROOT)/../extlib/src/SDL_mixer-1.2.12\"",
 					"\"$(SRCROOT)/../extlib/src/SDL_ttf-2.0.8\"",
 					"\"$(SRCROOT)/../extlib/src/smpeg\"",
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -5045,7 +5081,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsamake;
 			};
@@ -5063,7 +5101,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsamake;
 				ZERO_LINK = NO;
@@ -5082,7 +5122,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sarmake;
 			};
@@ -5099,7 +5141,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sarmake;
 				ZERO_LINK = NO;
@@ -5118,6 +5162,8 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2dec;
 			};
@@ -5134,6 +5180,8 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2dec;
 				ZERO_LINK = NO;
@@ -5152,7 +5200,9 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2conv;
 			};
@@ -5169,7 +5219,9 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2conv;
 				ZERO_LINK = NO;
@@ -5188,7 +5240,9 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2make;
 			};
@@ -5205,7 +5259,9 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2make;
 				ZERO_LINK = NO;
@@ -5220,7 +5276,9 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = batchconv;
 			};
@@ -5233,7 +5291,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = batchconv;
 				ZERO_LINK = NO;
@@ -5244,26 +5304,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				GCC_VERSION = 4.0;
 				"GCC_VERSION[sdk=macosx10.6][arch=*]" = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/\"",
-					"\"$(SRCROOT)/../extlib/src/SDL-1.2.13/include\"",
+					"\"$(SRCROOT)/../extlib/src/SDL-1.2.15/include\"",
 					"\"$(SRCROOT)/../extlib/src/freetype-2.3.5/include\"",
 					"\"$(SRCROOT)/../extlib/src/jpeg-6b\"",
 					"\"$(SRCROOT)/../extlib/src/libogg-1.1.3/include\"",
 					"\"$(SRCROOT)/../extlib/src/libvorbis-1.2.0/include\"",
 					"\"$(SRCROOT)/../extlib/src/libpng-1.2.24\"",
 					"\"$(SRCROOT)/../extlib/src/SDL_image-1.2.6\"",
-					"\"$(SRCROOT)/../extlib/src/SDL_mixer-1.2.8\"",
+					"\"$(SRCROOT)/../extlib/src/SDL_mixer-1.2.12\"",
 					"\"$(SRCROOT)/../extlib/src/SDL_ttf-2.0.8\"",
 					"\"$(SRCROOT)/../extlib/src/smpeg\"",
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
+				SDKROOT = macosx;
 				"SDKROOT[arch=x86_64]" = macosx10.6;
 			};
 			name = Release64;
@@ -5286,18 +5346,22 @@
 					"UTF8_FILESYSTEM=1",
 					"USE_OGG_VORBIS=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_PREPROCESS = NO;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "";
 				"OTHER_CFLAGS[arch=i386]" = "-DUSE_X86_GFX";
 				"OTHER_CFLAGS[arch=ppc]" = (
 					"-DUSE_PPC_GFX",
 					"-maltivec",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.denpa.onscripter-en";
 				PRODUCT_NAME = ONScripter;
+				SDKROOT = macosx;
 				SEPARATE_STRIP = NO;
 				STRIP_INSTALLED_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -5311,6 +5375,8 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = Tools;
 				ZERO_LINK = NO;
 			};
@@ -5326,9 +5392,11 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = ../extlib/lib/;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = libjpeg;
 				ZERO_LINK = NO;
@@ -5345,9 +5413,11 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-fsigned-char";
 				PREBINDING = NO;
 				PRODUCT_NAME = libogg;
@@ -5365,9 +5435,11 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DDARWIN",
 					"-fno-common",
@@ -5407,9 +5479,11 @@
 					"HAVE_SYS_TYPES_H=1",
 					"HAVE_UNISTD_H=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DPNG_CONFIGURE_LIBPNG";
 				PREBINDING = NO;
 				PRODUCT_NAME = libpng;
@@ -5427,10 +5501,12 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D_GNU_SOURCE=1",
 					"-DTARGET_API_MAC_CARBON",
@@ -5458,8 +5534,10 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -5507,9 +5585,11 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				GENERATE_MASTER_OBJECT_FILE = YES;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D_GNU_SOURCE=1",
 					"-D_THREAD_SAFE",
@@ -5568,8 +5648,10 @@
 				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_5 = "PACKAGE_BUGREPORT=\"\"";
 				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_6 = "PACKAGE=\"sdl_image\"";
 				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_7 = "VERSION=\"1.2.5\"";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -5607,7 +5689,7 @@
 				OTHER_CFLAGS_QUOTED_7 = "-DVERSION=\"1.2.5\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = SDL_image;
-				USER_HEADER_SEARCH_PATHS = ". ../extlib/src/SDL-1.2.13/include";
+				USER_HEADER_SEARCH_PATHS = ". ../extlib/src/SDL-1.2.15/include";
 				ZERO_LINK = NO;
 			};
 			name = Release64;
@@ -5620,8 +5702,10 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"$(OTHER_CFLAGS_QUOTED_1)",
 					"$(OTHER_CFLAGS_QUOTED_2)",
@@ -5673,8 +5757,10 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-DFT_CONFIG_OPTION_SYSTEM_ZLIB",
 					"-DDARWIN_NO_CARBON",
@@ -5701,7 +5787,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sardec;
 				ZERO_LINK = NO;
@@ -5719,7 +5807,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sarconv;
 				ZERO_LINK = NO;
@@ -5737,7 +5827,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sarmake;
 				ZERO_LINK = NO;
@@ -5755,7 +5847,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsadec;
 				ZERO_LINK = NO;
@@ -5773,7 +5867,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsaconv;
 				ZERO_LINK = NO;
@@ -5792,7 +5888,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsamake;
 				ZERO_LINK = NO;
@@ -5810,6 +5908,8 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2dec;
 				ZERO_LINK = NO;
@@ -5827,7 +5927,9 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2conv;
 				ZERO_LINK = NO;
@@ -5845,7 +5947,9 @@
 					TOOLS_BUILD,
 					NS2,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = ns2make;
 				ZERO_LINK = NO;
@@ -5859,7 +5963,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = batchconv;
 				ZERO_LINK = NO;
@@ -5873,7 +5979,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nscdec;
 				ZERO_LINK = NO;
@@ -5887,7 +5995,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nscmake;
 				ZERO_LINK = NO;
@@ -5906,7 +6016,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsadec;
 			};
@@ -5923,7 +6035,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsadec;
 				ZERO_LINK = NO;
@@ -5942,7 +6056,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sardec;
 			};
@@ -5959,7 +6075,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sardec;
 				ZERO_LINK = NO;
@@ -5978,7 +6096,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sarconv;
 			};
@@ -5995,7 +6115,9 @@
 					TOOLS_BUILD,
 					SAR,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = sarconv;
 				ZERO_LINK = NO;
@@ -6014,7 +6136,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsaconv;
 			};
@@ -6031,7 +6155,9 @@
 					TOOLS_BUILD,
 					NSA,
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nsaconv;
 				ZERO_LINK = NO;
@@ -6046,7 +6172,9 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nscdec;
 			};
@@ -6059,7 +6187,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nscdec;
 				ZERO_LINK = NO;
@@ -6074,7 +6204,9 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nscmake;
 			};
@@ -6087,7 +6219,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PREBINDING = NO;
 				PRODUCT_NAME = nscmake;
 				ZERO_LINK = NO;
@@ -6100,6 +6234,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = Tools;
 			};
 			name = Debug;
@@ -6110,6 +6246,8 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = Tools;
 				ZERO_LINK = NO;
 			};

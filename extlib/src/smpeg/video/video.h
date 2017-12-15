@@ -439,7 +439,11 @@ extern unsigned int cacheMiss[8][8];
 #ifdef ENDIAN_IN_SYS
 #include <sys/endian.h>
 #else
+#ifdef __APPLE__
+#include <machine/endian.h>
+#else
 #include <endian.h>
+#endif
 #endif
 #if __BYTE_ORDER == __LITTLE_ENDIAN
 #undef  BIG_ENDIAN_ARCHITECTURE
