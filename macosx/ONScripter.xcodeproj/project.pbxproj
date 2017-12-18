@@ -3477,7 +3477,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "REV=`svnversion -n \"${PROJECT_DIR}/..\"`\nREPO=`svn info \"${PROJECT_DIR}/..\" | grep -e \"^URL\" | sed \"s/^.*\\/\\(.*\\)$/\\\\1/\"`\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString '$REV'\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion '$REPO r$REV'\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nexit 0";
+			shellScript = "REV=`cd \"${PROJECT_DIR}/..\" && git describe --tags --abbrev=0`\nREPO=`cd \"${PROJECT_DIR}/..\" && git remote get-url origin`\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString '$REV'\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion 'r$REV ($REPO)'\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
